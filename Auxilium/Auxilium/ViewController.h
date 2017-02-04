@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BEMAnalogClockView.h"
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController <BEMAnalogClockDelegate> {
+    BEMAnalogClockView *myClock;
+}
 
 @end
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C2404AEC880BD30B992FE6 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC36824F62DA5103374ED5B1 /* Pods_AuxiliumUITests.framework */; };
+		42341C496A8B8561F0FF65D7 /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B9AB84316D811AA05D3EB4 /* Pods_AuxiliumTests.framework */; };
+		492D210ED7A5D1E370F9B227 /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */; };
+		A201A7871E468DF200C074D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A201A7861E468DF200C074D0 /* GoogleService-Info.plist */; };
 		A21AF43F1E46687E007D9BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF43E1E46687E007D9BC5 /* main.m */; };
 		A21AF4421E46687E007D9BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4411E46687E007D9BC5 /* AppDelegate.m */; };
 		A21AF4451E46687E007D9BC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4441E46687E007D9BC5 /* ViewController.m */; };
@@ -16,6 +20,10 @@
 		A21AF4501E46687E007D9BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21AF44E1E46687E007D9BC5 /* LaunchScreen.storyboard */; };
 		A21AF45B1E46687E007D9BC5 /* AuxiliumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF45A1E46687E007D9BC5 /* AuxiliumTests.m */; };
 		A21AF4661E46687E007D9BC5 /* AuxiliumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4651E46687E007D9BC5 /* AuxiliumUITests.m */; };
+		A298AB651E4692D20009F45A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A298AB641E4692D20009F45A /* tessdata */; };
+		A298AB671E46932F0009F45A /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298AB661E46932F0009F45A /* TesseractOCR.framework */; };
+		A298AB691E4693E70009F45A /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A298AB681E4693E60009F45A /* image_sample.jpg */; };
+		A298AB6C1E46986A0009F45A /* AddMedicine.m in Sources */ = {isa = PBXBuildFile; fileRef = A298AB6B1E46986A0009F45A /* AddMedicine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B9AB84316D811AA05D3EB4 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1B2E0BE26ABA0A0792D89B /* Pods-AuxiliumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5738ED6354C184724FC766D2 /* Pods-Auxilium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.release.xcconfig"; sourceTree = "<group>"; };
+		5F19A877A4E6EC440B4CCD45 /* Pods-AuxiliumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69469057EB57FC097CB46855 /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxilium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A201A7861E468DF200C074D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A21AF43A1E46687E007D9BC5 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AF43E1E46687E007D9BC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A21AF4401E46687E007D9BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +68,14 @@
 		A21AF4611E46687E007D9BC5 /* AuxiliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuxiliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AF4651E46687E007D9BC5 /* AuxiliumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuxiliumUITests.m; sourceTree = "<group>"; };
 		A21AF4671E46687E007D9BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A298AB641E4692D20009F45A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		A298AB661E46932F0009F45A /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		A298AB681E4693E60009F45A /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
+		A298AB6A1E46986A0009F45A /* AddMedicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicine.h; sourceTree = "<group>"; };
+		A298AB6B1E46986A0009F45A /* AddMedicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicine.m; sourceTree = "<group>"; };
+		BC36824F62DA5103374ED5B1 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD25805CBB1E6477FD399C59 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
+		F85E327D657D67B50CC30024 /* Pods-AuxiliumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A298AB671E46932F0009F45A /* TesseractOCR.framework in Frameworks */,
+				492D210ED7A5D1E370F9B227 /* Pods_Auxilium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42341C496A8B8561F0FF65D7 /* Pods_AuxiliumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,19 +100,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C2404AEC880BD30B992FE6 /* Pods_AuxiliumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24573E536BE7560193123A29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD25805CBB1E6477FD399C59 /* Pods-Auxilium.debug.xcconfig */,
+				5738ED6354C184724FC766D2 /* Pods-Auxilium.release.xcconfig */,
+				69469057EB57FC097CB46855 /* Pods-AuxiliumTests.debug.xcconfig */,
+				F85E327D657D67B50CC30024 /* Pods-AuxiliumTests.release.xcconfig */,
+				2E1B2E0BE26ABA0A0792D89B /* Pods-AuxiliumUITests.debug.xcconfig */,
+				5F19A877A4E6EC440B4CCD45 /* Pods-AuxiliumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B0F7CD326B0F3820D4374EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */,
+				16B9AB84316D811AA05D3EB4 /* Pods_AuxiliumTests.framework */,
+				BC36824F62DA5103374ED5B1 /* Pods_AuxiliumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A21AF4311E46687D007D9BC5 = {
 			isa = PBXGroup;
 			children = (
+				A298AB6A1E46986A0009F45A /* AddMedicine.h */,
+				A298AB6B1E46986A0009F45A /* AddMedicine.m */,
 				A21AF43C1E46687E007D9BC5 /* Auxilium */,
 				A21AF4591E46687E007D9BC5 /* AuxiliumTests */,
 				A21AF4641E46687E007D9BC5 /* AuxiliumUITests */,
 				A21AF43B1E46687E007D9BC5 /* Products */,
+				24573E536BE7560193123A29 /* Pods */,
+				5B0F7CD326B0F3820D4374EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +166,10 @@
 				A21AF44E1E46687E007D9BC5 /* LaunchScreen.storyboard */,
 				A21AF4511E46687E007D9BC5 /* Info.plist */,
 				A21AF4491E46687E007D9BC5 /* Auxilium.xcdatamodeld */,
+				A298AB661E46932F0009F45A /* TesseractOCR.framework */,
+				A201A7861E468DF200C074D0 /* GoogleService-Info.plist */,
+				A298AB681E4693E60009F45A /* image_sample.jpg */,
+				A298AB641E4692D20009F45A /* tessdata */,
 				A21AF43D1E46687E007D9BC5 /* Supporting Files */,
 			);
 			path = Auxilium;
@@ -150,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21AF46A1E46687E007D9BC5 /* Build configuration list for PBXNativeTarget "Auxilium" */;
 			buildPhases = (
+				1E54C49EF1878BFB5E3AAE5D /* [CP] Check Pods Manifest.lock */,
 				A21AF4361E46687D007D9BC5 /* Sources */,
 				A21AF4371E46687D007D9BC5 /* Frameworks */,
 				A21AF4381E46687D007D9BC5 /* Resources */,
+				97408C2F30505981BD29F447 /* [CP] Embed Pods Frameworks */,
+				205023D3617A8F7CF99AB37E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21AF46D1E46687E007D9BC5 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */;
 			buildPhases = (
+				2CEEEEB2EF61C59704B528C8 /* [CP] Check Pods Manifest.lock */,
 				A21AF4521E46687E007D9BC5 /* Sources */,
 				A21AF4531E46687E007D9BC5 /* Frameworks */,
 				A21AF4541E46687E007D9BC5 /* Resources */,
+				E547DA8A2216351EFE63713D /* [CP] Embed Pods Frameworks */,
+				90A121ED2AE2CCE35B2D0F7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21AF4701E46687E007D9BC5 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */;
 			buildPhases = (
+				BE9932775D1D87F362B62DD3 /* [CP] Check Pods Manifest.lock */,
 				A21AF45D1E46687E007D9BC5 /* Sources */,
 				A21AF45E1E46687E007D9BC5 /* Frameworks */,
 				A21AF45F1E46687E007D9BC5 /* Resources */,
+				0D6933874C7E22B3D21379F9 /* [CP] Embed Pods Frameworks */,
+				59CFEC9D41E7F6CA01F75FB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21AF4501E46687E007D9BC5 /* LaunchScreen.storyboard in Resources */,
+				A298AB691E4693E70009F45A /* image_sample.jpg in Resources */,
+				A201A7871E468DF200C074D0 /* GoogleService-Info.plist in Resources */,
+				A298AB651E4692D20009F45A /* tessdata in Resources */,
 				A21AF44D1E46687E007D9BC5 /* Assets.xcassets in Resources */,
 				A21AF4481E46687E007D9BC5 /* Main.storyboard in Resources */,
 			);
@@ -274,11 +344,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D6933874C7E22B3D21379F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E54C49EF1878BFB5E3AAE5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		205023D3617A8F7CF99AB37E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CEEEEB2EF61C59704B528C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59CFEC9D41E7F6CA01F75FB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90A121ED2AE2CCE35B2D0F7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97408C2F30505981BD29F447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9932775D1D87F362B62DD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E547DA8A2216351EFE63713D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A21AF4361E46687D007D9BC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A298AB6C1E46986A0009F45A /* AddMedicine.m in Sources */,
 				A21AF4451E46687E007D9BC5 /* ViewController.m in Sources */,
 				A21AF4421E46687E007D9BC5 /* AppDelegate.m in Sources */,
 				A21AF43F1E46687E007D9BC5 /* main.m in Sources */,
@@ -361,6 +570,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -408,6 +618,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -427,9 +638,15 @@
 		};
 		A21AF46B1E46687E007D9BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD25805CBB1E6477FD399C59 /* Pods-Auxilium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Auxilium",
+				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.Auxilium";
@@ -439,9 +656,15 @@
 		};
 		A21AF46C1E46687E007D9BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5738ED6354C184724FC766D2 /* Pods-Auxilium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Auxilium",
+				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.Auxilium";
@@ -451,6 +674,7 @@
 		};
 		A21AF46E1E46687E007D9BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69469057EB57FC097CB46855 /* Pods-AuxiliumTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 65777GTD95;
@@ -464,6 +688,7 @@
 		};
 		A21AF46F1E46687E007D9BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85E327D657D67B50CC30024 /* Pods-AuxiliumTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 65777GTD95;
@@ -477,6 +702,7 @@
 		};
 		A21AF4711E46687E007D9BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1B2E0BE26ABA0A0792D89B /* Pods-AuxiliumUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
@@ -489,6 +715,7 @@
 		};
 		A21AF4721E46687E007D9BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F19A877A4E6EC440B4CCD45 /* Pods-AuxiliumUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
@@ -518,6 +745,7 @@
 				A21AF46C1E46687E007D9BC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A21AF46D1E46687E007D9BC5 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +754,7 @@
 				A21AF46F1E46687E007D9BC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A21AF4701E46687E007D9BC5 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +763,7 @@
 				A21AF4721E46687E007D9BC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
