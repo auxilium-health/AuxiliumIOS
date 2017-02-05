@@ -43,8 +43,31 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-    
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *color = [[defaults valueForKey:@"colorArray"] mutableCopy];
+    if([color objectAtIndex:indexPath.row]) {
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Black"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor blackColor];
+        }
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Brown"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor brownColor];
+        }
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Purple"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor purpleColor];
+        }
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Yellow"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor yellowColor];
+        }
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Green"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor greenColor];
+        }
+        if([[appDelegate.colorArray objectAtIndex:indexPath.row] isEqualToString:@"Blue"] && [[tableData objectAtIndex:indexPath.row] isEqualToString:cell.textLabel.text]) {
+            cell.textLabel.textColor = [UIColor blueColor];
+        }
+    }
     return cell;
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,9 +86,9 @@
     
     
     [defaults setValue:tableData forKey:@"nameArray"];
-    [defaults setValue:tableData forKey:@"timesArray"];
-    [defaults setValue:tableData forKey:@"refillArray"];
-    [defaults setValue:tableData forKey:@"colorArray"];
+    [defaults setValue:time forKey:@"timesArray"];
+    [defaults setValue:refill forKey:@"refillArray"];
+    [defaults setValue:color forKey:@"colorArray"];
 
     
     // Request table view to reload
@@ -105,9 +128,9 @@
     [color removeObjectAtIndex:indexPath.row];
     
     [defaults setValue:tableData forKey:@"nameArray"];
-    [defaults setValue:tableData forKey:@"timesArray"];
-    [defaults setValue:tableData forKey:@"refillArray"];
-    [defaults setValue:tableData forKey:@"colorArray"];
+    [defaults setValue:time forKey:@"timesArray"];
+    [defaults setValue:refill forKey:@"refillArray"];
+    [defaults setValue:color forKey:@"colorArray"];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"medData"];

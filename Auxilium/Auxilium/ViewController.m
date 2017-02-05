@@ -71,6 +71,7 @@
     myClock.minuteHandLength = 100;
     myClock.minuteHandAlpha = 0;
     myClock.hourHandLength = 100;
+    myClock.hourHandColor = [UIColor whiteColor];
     myClock.faceBackgroundColor = [UIColor redColor];
     
     MDCFloatingButton *raisedButton = [MDCFloatingButton new];
@@ -127,50 +128,50 @@
      [circleLayer2 setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.view.center.x + (150 * -sin((2*3.14*time)/24)) - 23, self.view.center.y + (150 * -cos((2*3.14*time)/24)), 20, 20)] CGPath]];
     [circleLayer3 setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.view.center.x + (134 * -sin((2*3.14*time2)/24)), self.view.center.y + (134 * -cos((2*3.14*time2)/24)), 20, 20)] CGPath]];
     
-    
-    for(int x = 0; x < 1; x++) {
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Black"]) {
-            [circleLayer setFillColor:[[UIColor blackColor] CGColor]];
+    if([appDelegate.colorArray count] > 0) {
+        for(int x = 0; x < 1; x++) {
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Black"]) {
+                [circleLayer setFillColor:[[UIColor blackColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Brown"]) {
+                [circleLayer setFillColor:[[UIColor brownColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Purple"]) {
+                [circleLayer setFillColor:[[UIColor purpleColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Yellow"]) {
+                [circleLayer setFillColor:[[UIColor yellowColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Green"]) {
+                [circleLayer setFillColor:[[UIColor greenColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Blue"]) {
+                [circleLayer setFillColor:[[UIColor blueColor] CGColor]];
+            }
+            [[self.view layer] addSublayer:circleLayer];
         }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Brown"]) {
-            [circleLayer setFillColor:[[UIColor brownColor] CGColor]];
+        for(int x = 0; x < 1; x++) {
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Black"]) {
+                [circleLayer3 setFillColor:[[UIColor blackColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Brown"]) {
+                [circleLayer3 setFillColor:[[UIColor brownColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Purple"]) {
+                [circleLayer3 setFillColor:[[UIColor purpleColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Yellow"]) {
+                [circleLayer3 setFillColor:[[UIColor yellowColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Green"]) {
+                [circleLayer3 setFillColor:[[UIColor greenColor] CGColor]];
+            }
+            if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Blue"]) {
+                [circleLayer3 setFillColor:[[UIColor blueColor] CGColor]];
+            }
+            [[self.view layer] addSublayer:circleLayer3];
         }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Purple"]) {
-            [circleLayer setFillColor:[[UIColor purpleColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Yellow"]) {
-            [circleLayer setFillColor:[[UIColor yellowColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Green"]) {
-            [circleLayer setFillColor:[[UIColor greenColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Blue"]) {
-            [circleLayer setFillColor:[[UIColor blueColor] CGColor]];
-        }
-        [[self.view layer] addSublayer:circleLayer];
     }
-    for(int x = 0; x < 1; x++) {
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Black"]) {
-            [circleLayer3 setFillColor:[[UIColor blackColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Brown"]) {
-            [circleLayer3 setFillColor:[[UIColor brownColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Purple"]) {
-            [circleLayer3 setFillColor:[[UIColor purpleColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Yellow"]) {
-            [circleLayer3 setFillColor:[[UIColor yellowColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Green"]) {
-            [circleLayer3 setFillColor:[[UIColor greenColor] CGColor]];
-        }
-        if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Blue"]) {
-            [circleLayer3 setFillColor:[[UIColor blueColor] CGColor]];
-        }
-        [[self.view layer] addSublayer:circleLayer3];
-    }
-
     if([appDelegate.colorArray count] > 1) {
         for(int x = 1; x < 2; x++) {
             if([[appDelegate.colorArray objectAtIndex:x] isEqualToString:@"Black"]) {
