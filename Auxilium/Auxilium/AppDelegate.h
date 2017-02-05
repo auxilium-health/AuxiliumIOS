@@ -25,6 +25,11 @@
 @property (nonatomic, retain) NSMutableArray *colorArray;
 @property (nonatomic, retain) NSMutableArray *refillArray;
 
+@property (nonatomic, retain) NSString *pharmacy;
+@property (nonatomic, retain) NSString *location;
+@property (nonatomic, retain) NSString *docName;
+@property (nonatomic, retain) NSString *docPhone;
+
 - (void)saveContext;
 
 

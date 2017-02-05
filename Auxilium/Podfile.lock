@@ -1,0 +1,198 @@
+PODS:
+  - BEMAnalogClock (1.6)
+  - Firebase/Core (3.12.0):
+    - FirebaseAnalytics (= 3.6.0)
+    - FirebaseCore (= 3.4.7)
+  - FirebaseAnalytics (3.6.0):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.4.7):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.8)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - MaterialComponents (20.1.1):
+    - MaterialComponents/ActivityIndicator (= 20.1.1)
+    - MaterialComponents/AnimationTiming (= 20.1.1)
+    - MaterialComponents/AppBar (= 20.1.1)
+    - MaterialComponents/ButtonBar (= 20.1.1)
+    - MaterialComponents/Buttons (= 20.1.1)
+    - MaterialComponents/CollectionCells (= 20.1.1)
+    - MaterialComponents/CollectionLayoutAttributes (= 20.1.1)
+    - MaterialComponents/Collections (= 20.1.1)
+    - MaterialComponents/Dialogs (= 20.1.1)
+    - MaterialComponents/FeatureHighlight (= 20.1.1)
+    - MaterialComponents/FlexibleHeader (= 20.1.1)
+    - MaterialComponents/HeaderStackView (= 20.1.1)
+    - MaterialComponents/Ink (= 20.1.1)
+    - MaterialComponents/NavigationBar (= 20.1.1)
+    - MaterialComponents/OverlayWindow (= 20.1.1)
+    - MaterialComponents/PageControl (= 20.1.1)
+    - MaterialComponents/Palettes (= 20.1.1)
+    - MaterialComponents/private (= 20.1.1)
+    - MaterialComponents/ProgressView (= 20.1.1)
+    - MaterialComponents/ShadowElevations (= 20.1.1)
+    - MaterialComponents/ShadowLayer (= 20.1.1)
+    - MaterialComponents/Slider (= 20.1.1)
+    - MaterialComponents/Snackbar (= 20.1.1)
+    - MaterialComponents/Tabs (= 20.1.1)
+    - MaterialComponents/Typography (= 20.1.1)
+  - MaterialComponents/ActivityIndicator (20.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/RTL
+  - MaterialComponents/AnimationTiming (20.1.1)
+  - MaterialComponents/AppBar (20.1.1):
+    - MaterialComponents/FlexibleHeader
+    - MaterialComponents/HeaderStackView
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Icons/ic_arrow_back
+    - MaterialComponents/private/RTL
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/ButtonBar (20.1.1):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/RTL
+  - MaterialComponents/Buttons (20.1.1):
+    - MaterialComponents/Ink
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFTextAccessibility
+  - MaterialComponents/CollectionCells (20.1.1):
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Icons/ic_chevron_right
+    - MaterialComponents/private/Icons/ic_info
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked
+    - MaterialComponents/private/Icons/ic_reorder
+    - MaterialComponents/private/RTL
+    - MaterialComponents/Typography
+  - MaterialComponents/CollectionLayoutAttributes (20.1.1)
+  - MaterialComponents/Collections (20.1.1):
+    - MaterialComponents/CollectionCells
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/Dialogs (20.1.1):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/RTL
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/FeatureHighlight (20.1.1):
+    - MaterialComponents/Typography
+    - MDFTextAccessibility
+  - MaterialComponents/FlexibleHeader (20.1.1):
+    - MaterialComponents/private/Application
+    - MDFTextAccessibility
+  - MaterialComponents/HeaderStackView (20.1.1)
+  - MaterialComponents/Ink (20.1.1)
+  - MaterialComponents/NavigationBar (20.1.1):
+    - MaterialComponents/ButtonBar
+    - MaterialComponents/private/RTL
+    - MaterialComponents/Typography
+  - MaterialComponents/OverlayWindow (20.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/PageControl (20.1.1)
+  - MaterialComponents/Palettes (20.1.1)
+  - MaterialComponents/private (20.1.1):
+    - MaterialComponents/private/Application (= 20.1.1)
+    - MaterialComponents/private/Icons (= 20.1.1)
+    - MaterialComponents/private/KeyboardWatcher (= 20.1.1)
+    - MaterialComponents/private/Overlay (= 20.1.1)
+    - MaterialComponents/private/RTL (= 20.1.1)
+    - MaterialComponents/private/ThumbTrack (= 20.1.1)
+  - MaterialComponents/private/Application (20.1.1)
+  - MaterialComponents/private/Icons (20.1.1):
+    - MaterialComponents/private/Icons/Base (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_arrow_back (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_check (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_check_circle (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_chevron_right (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_info (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked (= 20.1.1)
+    - MaterialComponents/private/Icons/ic_reorder (= 20.1.1)
+  - MaterialComponents/private/Icons/Base (20.1.1)
+  - MaterialComponents/private/Icons/ic_arrow_back (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_check (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_check_circle (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_chevron_right (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_info (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_radio_button_unchecked (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_reorder (20.1.1):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/KeyboardWatcher (20.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Overlay (20.1.1)
+  - MaterialComponents/private/RTL (20.1.1)
+  - MaterialComponents/private/ThumbTrack (20.1.1):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/RTL
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/ProgressView (20.1.1):
+    - MaterialComponents/private/RTL
+  - MaterialComponents/ShadowElevations (20.1.1)
+  - MaterialComponents/ShadowLayer (20.1.1)
+  - MaterialComponents/Slider (20.1.1):
+    - MaterialComponents/private/ThumbTrack
+  - MaterialComponents/Snackbar (20.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
+  - MaterialComponents/Tabs (20.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Ink
+    - MaterialComponents/private/RTL
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (20.1.1)
+  - MDFTextAccessibility (1.1.4)
+  - TesseractOCRiOS (4.0.0)
+
+DEPENDENCIES:
+  - BEMAnalogClock
+  - Firebase/Core
+  - MaterialComponents
+  - TesseractOCRiOS (= 4.0.0)
+
+SPEC CHECKSUMS:
+  BEMAnalogClock: b654e7f507cc02895222a26c33ca8493172b39cd
+  Firebase: 8e99eb1ff553ad5bcc6072cc3d925bb89c1244d6
+  FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
+  FirebaseCore: 46afaf2c2e0419ea7d3acfb08cf26a461a75fe85
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  MaterialComponents: 26372b7d42f8057bc467a796dea73cf62abc03ed
+  MDFTextAccessibility: aa897b2675bc614c01a331053af680deea692148
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
+
+PODFILE CHECKSUM: 19c47703b963825ed49dfc3c28f298d82cc976f4
+
+COCOAPODS: 1.1.1

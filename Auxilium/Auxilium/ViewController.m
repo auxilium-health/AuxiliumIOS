@@ -84,6 +84,32 @@
     
     [self.view addSubview:raisedButton];
     
+    
+    MDCFloatingButton *raisedButton2 = [MDCFloatingButton new];
+    [raisedButton2 setTitle:@"Meds" forState:UIControlStateNormal];
+    raisedButton2.titleLabel.font = [UIFont systemFontOfSize:8];
+    raisedButton2.frame = CGRectMake(self.view.frame.size.width/2 + self.view.frame.size.width/4, self.view.frame.size.height/2 - 2.5*self.view.frame.size.height/8 , 50, 50);
+    [raisedButton2 sizeToFit];
+    [raisedButton2 addTarget:self
+                     action:@selector(addMed2)
+           forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:raisedButton2];
+    
+    
+    MDCFloatingButton *raisedButton3 = [MDCFloatingButton new];
+    [raisedButton3 setTitle:@"Info" forState:UIControlStateNormal];
+    raisedButton3.titleLabel.font = [UIFont systemFontOfSize:8];
+    raisedButton3.frame = CGRectMake(self.view.frame.size.width/2 - self.view.frame.size.width/4 - 50, self.view.frame.size.height/2 - 2.5*self.view.frame.size.height/8 , 50, 50);
+    [raisedButton3 sizeToFit];
+    [raisedButton3 addTarget:self
+                      action:@selector(addMed3)
+            forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:raisedButton3];
+    
+    
+    
     [self.view addSubview:myClock];
     
     NSTimer* myTimer = [NSTimer scheduledTimerWithTimeInterval: 60.0 target: self
@@ -123,8 +149,21 @@
 - (void) addMed {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"addMed"];
-//    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"medData"];
 
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
+}
+- (void) addMed2 {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"meds"];
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
+}
+- (void) addMed3 {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"info"];
+    
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];
 }

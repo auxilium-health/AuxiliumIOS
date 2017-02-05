@@ -26,6 +26,8 @@
 		A26FDA021E46A6D100FF782F /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA011E46A6D100FF782F /* TesseractOCR.framework */; };
 		A26FDA031E46A6DB00FF782F /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */; };
 		A26FDA0A1E46D7DA00FF782F /* MedData.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA091E46D7DA00FF782F /* MedData.m */; };
+		A26FDA0D1E470B2700FF782F /* MyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA0C1E470B2700FF782F /* MyInfo.m */; };
+		A26FDA101E471A3700FF782F /* Meds.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA0F1E471A3700FF782F /* Meds.m */; };
 		A298AB651E4692D20009F45A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A298AB641E4692D20009F45A /* tessdata */; };
 		A298AB691E4693E70009F45A /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A298AB681E4693E60009F45A /* image_sample.jpg */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,10 @@
 		A26FDA011E46A6D100FF782F /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework"; sourceTree = "<group>"; };
 		A26FDA081E46D7DA00FF782F /* MedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedData.h; sourceTree = "<group>"; };
 		A26FDA091E46D7DA00FF782F /* MedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedData.m; sourceTree = "<group>"; };
+		A26FDA0B1E470B2700FF782F /* MyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfo.h; sourceTree = "<group>"; };
+		A26FDA0C1E470B2700FF782F /* MyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfo.m; sourceTree = "<group>"; };
+		A26FDA0E1E471A3700FF782F /* Meds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meds.h; sourceTree = "<group>"; };
+		A26FDA0F1E471A3700FF782F /* Meds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meds.m; sourceTree = "<group>"; };
 		A298AB641E4692D20009F45A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		A298AB661E46932F0009F45A /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		A298AB681E4693E60009F45A /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
@@ -146,6 +152,10 @@
 		A21AF4311E46687D007D9BC5 = {
 			isa = PBXGroup;
 			children = (
+				A26FDA0E1E471A3700FF782F /* Meds.h */,
+				A26FDA0F1E471A3700FF782F /* Meds.m */,
+				A26FDA0B1E470B2700FF782F /* MyInfo.h */,
+				A26FDA0C1E470B2700FF782F /* MyInfo.m */,
 				A26FDA081E46D7DA00FF782F /* MedData.h */,
 				A26FDA091E46D7DA00FF782F /* MedData.m */,
 				A298AB6A1E46986A0009F45A /* AddMedicine.h */,
@@ -502,11 +512,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26FDA101E471A3700FF782F /* Meds.m in Sources */,
 				A21AD8F81E46A45D00DA84E3 /* Auxilium.xcdatamodeld in Sources */,
 				A21AD8F51E46A45400DA84E3 /* AddMedicine.m in Sources */,
 				A21AD8F61E46A45400DA84E3 /* AppDelegate.m in Sources */,
 				A21AD8F71E46A45400DA84E3 /* ViewController.m in Sources */,
 				A26FDA0A1E46D7DA00FF782F /* MedData.m in Sources */,
+				A26FDA0D1E470B2700FF782F /* MyInfo.m in Sources */,
 				A21AD8F21E46A3D900DA84E3 /* main.m in Sources */,
 				A21AD8F31E46A3D900DA84E3 /* AuxiliumTests.m in Sources */,
 				A21AD8F41E46A3D900DA84E3 /* AuxiliumUITests.m in Sources */,

@@ -16,7 +16,4 @@
     Boolean photo;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-- (IBAction)takePhoto:  (UIButton *)sender;
-- (IBAction)selectPhoto:(UIButton *)sender;
-
 @end

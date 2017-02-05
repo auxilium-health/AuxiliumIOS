@@ -26,9 +26,8 @@
 - (void) viewDidAppear:(BOOL)animated {
     if(photo == false) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-//        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         picker.delegate = self;
-        [self presentModalViewController:picker animated:YES];
+        [self presentViewController:picker animated:YES completion:nil];
     }
     photo = true;
 
@@ -41,7 +40,7 @@
     
     [self.imageView setImage:image];
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     [self runRecognition];
     
@@ -55,40 +54,16 @@
 }
 
 -(void) runRecognition {
-    // Create RecognitionOperation
     G8RecognitionOperation *operation = [[G8RecognitionOperation alloc] initWithLanguage:@"eng+ita"];
     
-    // Configure inner G8Tesseract object as described before
-//    operation.tesseract.language = @"eng";
-    //    operation.tesseract.charWhitelist = @"01234567890";
     operation.tesseract.image = [image g8_blackAndWhite];
     
-    // Setup the recognitionCompleteBlock to receive the Tesseract object
-    // after text recognition. It will hold the recognized text.
     operation.recognitionCompleteBlock = ^(G8Tesseract *recognizedTesseract) {
-        // Retrieve the recognized text upon completion
         NSLog(@"%@", [recognizedTesseract recognizedText]);
         
         int index = 0;
-//        int index2 = 0;
-//        
-//        for (int i=0;i<[[recognizedTesseract recognizedText] length];i++)
-//        {
-//            if ([[recognizedTesseract recognizedText] characterAtIndex:i]=='-' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='0')
-//            {
-//                index = i;
-//                break;
-//            }
-//        }
-//        for (int i=0;i<[[recognizedTesseract recognizedText] length];i++)
-//        {
-//            if ([[recognizedTesseract recognizedText] characterAtIndex:i]=='0' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='1' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='2' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='0' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='3' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='4' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='5' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='6' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='7' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='8' || [[recognizedTesseract recognizedText] characterAtIndex:i]=='9')
-//            {
-//                index2 = i;
-//                break;
-//            }
-//        }
         int number = 0;
+        
         for (int i=0;i<[[recognizedTesseract recognizedText] length];i++)
         {
             if([[recognizedTesseract recognizedText] rangeOfString:@"ONCE"].location != NSNotFound) {
@@ -116,7 +91,6 @@
             }
         }
         
-//        NSRange range = [[recognizedTesseract recognizedText] rangeOfString:@"-"];
         NSString *substring = [text substringWithRange:NSMakeRange(0, index-1)];
         NSLog(@"%@", substring);
         NSLog(@"%@", [NSString stringWithFormat:@"%d", number]);
@@ -124,6 +98,9 @@
         AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
         appDelegate.medName = substring;
         appDelegate.weekTime = [NSString stringWithFormat:@"%d", number];
+        
+        appDelegate.refill = nil;
+        appDelegate.color = nil;
         
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"medData"];
@@ -133,13 +110,6 @@
 
     };
     
-    
-    
-    
-
-    
-    
-    // Add operation to queue
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [queue addOperation:operation];
 }

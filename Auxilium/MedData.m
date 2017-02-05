@@ -23,6 +23,22 @@
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     _medName.text = appDelegate.medName;
     _timesDay.text = appDelegate.weekTime;
+    _colorField.text = appDelegate.color;
+    
+    if(appDelegate.refill != nil) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        
+        // get NSDate from old string format
+        [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+        date = appDelegate.refill;
+        
+        // get string in new date format
+        [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+        NSString *strMyDate= [dateFormatter stringFromDate:date];
+        
+        _refillField.text = [NSString stringWithFormat:@"%@",strMyDate];
+    }
+    
     
     
     CGRect pickerFrame = CGRectMake(0,250,0,0);
@@ -36,7 +52,6 @@
     colorPicker = [[UIPickerView alloc] initWithFrame:pickerFrame];
     colorPicker.delegate = self;
     colorPicker.dataSource = self;
-//    [colorPicker addTarget:self action:@selector(pickerChanged2) forControlEvents:UIControlEventValueChanged];
     
     array = [NSMutableArray arrayWithObjects: @"Blue", @"Green", @"Yellow", @"Purple", @"Brown", @"Black", nil];
     _colorField.inputView = colorPicker;
@@ -82,16 +97,16 @@
     _refillField.text = [NSString stringWithFormat:@"%@",strMyDate];
 }
 
-
-//-(void)updateTextField:(id)sender
-//{
-//    UIDatePicker *picker = (UIDatePicker*)self.myTextField.inputView;
-//    self.myTextField.text = [NSString stringWithFormat:@"%@",picker.date];
-//}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)cancel:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
 }
 
 - (IBAction)done:(id)sender {
@@ -113,11 +128,6 @@
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.colorArray forKey:@"colorArray"];
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.refillArray forKey:@"refillArray"];
 
-//    appDelegate.medName = _medName.text;
-//    appDelegate.weekTime = _timesDay.text;
-//    appDelegate.color = _colorField.text;
-//    appDelegate.refill = date;
-    
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
     
