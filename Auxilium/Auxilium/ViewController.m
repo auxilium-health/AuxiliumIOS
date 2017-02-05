@@ -46,13 +46,6 @@
     appDelegate.colorArray = [[defaults valueForKey:@"colorArray"] mutableCopy];
     appDelegate.refillArray = [[defaults valueForKey:@"refillArray"] mutableCopy];
 
-//    if(appDelegate.medName != nil) {
-//        [appDelegate.nameArray addObject:appDelegate.medName];
-//        [appDelegate.timesArray addObject:appDelegate.weekTime];
-//        [appDelegate.colorArray addObject:appDelegate.color];
-//        [appDelegate.refillArray addObject:appDelegate.refill];
-//
-//    }
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.nameArray forKey:@"nameArray"];
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.timesArray forKey:@"timesArray"];
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.colorArray forKey:@"colorArray"];
@@ -226,7 +219,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
