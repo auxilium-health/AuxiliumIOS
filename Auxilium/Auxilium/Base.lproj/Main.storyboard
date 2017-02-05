@@ -141,7 +141,7 @@
                                                 <action selector="cancel:" destination="99C-Zc-HQa" id="zjP-Bl-ffB"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" style="plain" id="STt-ly-omP">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="STt-ly-omP">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d4s-uz-cba">
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -188,7 +188,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="My Information" id="8lc-yi-rzH">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="x4f-pS-YsQ">
+                                        <barButtonItem key="leftBarButtonItem" id="x4f-pS-YsQ">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g6W-Dn-F9h">
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,7 +198,7 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="7t3-YS-kX9">
+                                        <barButtonItem key="rightBarButtonItem" id="7t3-YS-kX9">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Mt-D7-5Hg">
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -309,7 +309,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="39P-Oj-SNX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="39P-Oj-SNX">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -337,6 +337,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxC-4T-Rsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2805.5999999999999" y="35.532233883058474"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Tci-XT-1s6">
+            <objects>
+                <viewController storyboardIdentifier="map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dPP-6G-Cmd" customClass="Map" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fbf-Eh-6YL"/>
+                        <viewControllerLayoutGuide type="bottom" id="GNw-5U-3xG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Gb-7R-d7u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-0X-ty9">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Location" id="MLw-XK-RlN">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="mrc-hT-K7n"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Directions" id="1tr-bz-voF">
+                                            <connections>
+                                                <action selector="directions:" destination="dPP-6G-Cmd" id="nKA-Vt-bYn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8r-AB-T17">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1Gb-7R-d7u" id="xRC-VC-i2x"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aQZ-0X-ty9" firstAttribute="leading" secondItem="1Gb-7R-d7u" secondAttribute="leading" id="Dmh-qI-5Zr"/>
+                            <constraint firstItem="Y8r-AB-T17" firstAttribute="bottom" secondItem="GNw-5U-3xG" secondAttribute="top" id="IkI-ku-3cp"/>
+                            <constraint firstItem="aQZ-0X-ty9" firstAttribute="trailing" secondItem="Y8r-AB-T17" secondAttribute="trailing" id="OdI-k2-hi0"/>
+                            <constraint firstItem="Y8r-AB-T17" firstAttribute="top" secondItem="aQZ-0X-ty9" secondAttribute="bottom" id="ZTU-zD-cRA"/>
+                            <constraint firstItem="aQZ-0X-ty9" firstAttribute="leading" secondItem="Y8r-AB-T17" secondAttribute="leading" id="l2k-hI-yQJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aQZ-0X-ty9" secondAttribute="trailing" id="nMd-Z5-AwW"/>
+                            <constraint firstItem="aQZ-0X-ty9" firstAttribute="top" secondItem="fbf-Eh-6YL" secondAttribute="bottom" constant="8" id="xTe-zr-bHg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Y8r-AB-T17" id="goe-a0-Enw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aya-yY-mF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3455.1999999999998" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>

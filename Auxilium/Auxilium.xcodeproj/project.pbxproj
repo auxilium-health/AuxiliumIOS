@@ -28,6 +28,18 @@
 		A26FDA0A1E46D7DA00FF782F /* MedData.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA091E46D7DA00FF782F /* MedData.m */; };
 		A26FDA0D1E470B2700FF782F /* MyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA0C1E470B2700FF782F /* MyInfo.m */; };
 		A26FDA101E471A3700FF782F /* Meds.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA0F1E471A3700FF782F /* Meds.m */; };
+		A26FDA121E472B7600FF782F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA111E472B7600FF782F /* CoreLocation.framework */; };
+		A26FDA151E472C3700FF782F /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA141E472C3700FF782F /* Map.m */; };
+		A26FDA171E47339300FF782F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA161E47339300FF782F /* MapKit.framework */; };
+		A26FDA1A1E47358600FF782F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA181E47358600FF782F /* EventKit.framework */; };
+		A26FDA1C1E4736DE00FF782F /* MaterialComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FD9FF1E46A6CC00FF782F /* MaterialComponents.framework */; };
+		A26FDA1D1E4736DE00FF782F /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */; };
+		A26FDA1E1E4736DE00FF782F /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA011E46A6D100FF782F /* TesseractOCR.framework */; };
+		A26FDA231E4736DF00FF782F /* BEMAnalogClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA1F1E4736DF00FF782F /* BEMAnalogClock.framework */; };
+		A26FDA241E4736DF00FF782F /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA201E4736DF00FF782F /* GoogleToolboxForMac.framework */; };
+		A26FDA251E4736DF00FF782F /* MDFTextAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA211E4736DF00FF782F /* MDFTextAccessibility.framework */; };
+		A26FDA261E4736DF00FF782F /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA221E4736DF00FF782F /* Pods_AuxiliumTests.framework */; };
+		A26FDA271E4736F600FF782F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA181E47358600FF782F /* EventKit.framework */; };
 		A298AB651E4692D20009F45A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A298AB641E4692D20009F45A /* tessdata */; };
 		A298AB691E4693E70009F45A /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A298AB681E4693E60009F45A /* image_sample.jpg */; };
 /* End PBXBuildFile section */
@@ -83,6 +95,16 @@
 		A26FDA0C1E470B2700FF782F /* MyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfo.m; sourceTree = "<group>"; };
 		A26FDA0E1E471A3700FF782F /* Meds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meds.h; sourceTree = "<group>"; };
 		A26FDA0F1E471A3700FF782F /* Meds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meds.m; sourceTree = "<group>"; };
+		A26FDA111E472B7600FF782F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A26FDA131E472C3700FF782F /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		A26FDA141E472C3700FF782F /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		A26FDA161E47339300FF782F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A26FDA181E47358600FF782F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A26FDA191E47358600FF782F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A26FDA1F1E4736DF00FF782F /* BEMAnalogClock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BEMAnalogClock.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/BEMAnalogClock/BEMAnalogClock.framework"; sourceTree = "<group>"; };
+		A26FDA201E4736DF00FF782F /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		A26FDA211E4736DF00FF782F /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MDFTextAccessibility.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/MDFTextAccessibility/MDFTextAccessibility.framework"; sourceTree = "<group>"; };
+		A26FDA221E4736DF00FF782F /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AuxiliumTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_AuxiliumTests.framework"; sourceTree = "<group>"; };
 		A298AB641E4692D20009F45A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		A298AB661E46932F0009F45A /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		A298AB681E4693E60009F45A /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
@@ -98,7 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26FDA1A1E47358600FF782F /* EventKit.framework in Frameworks */,
+				A26FDA121E472B7600FF782F /* CoreLocation.framework in Frameworks */,
 				A26FDA031E46A6DB00FF782F /* Pods_Auxilium.framework in Frameworks */,
+				A26FDA171E47339300FF782F /* MapKit.framework in Frameworks */,
 				A26FDA021E46A6D100FF782F /* TesseractOCR.framework in Frameworks */,
 				A26FDA001E46A6CC00FF782F /* MaterialComponents.framework in Frameworks */,
 			);
@@ -116,6 +141,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26FDA271E4736F600FF782F /* EventKit.framework in Frameworks */,
+				A26FDA231E4736DF00FF782F /* BEMAnalogClock.framework in Frameworks */,
+				A26FDA241E4736DF00FF782F /* GoogleToolboxForMac.framework in Frameworks */,
+				A26FDA251E4736DF00FF782F /* MDFTextAccessibility.framework in Frameworks */,
+				A26FDA261E4736DF00FF782F /* Pods_AuxiliumTests.framework in Frameworks */,
+				A26FDA1C1E4736DE00FF782F /* MaterialComponents.framework in Frameworks */,
+				A26FDA1D1E4736DE00FF782F /* Pods_Auxilium.framework in Frameworks */,
+				A26FDA1E1E4736DE00FF782F /* TesseractOCR.framework in Frameworks */,
 				15C2404AEC880BD30B992FE6 /* Pods_AuxiliumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +172,14 @@
 		5B0F7CD326B0F3820D4374EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A26FDA1F1E4736DF00FF782F /* BEMAnalogClock.framework */,
+				A26FDA201E4736DF00FF782F /* GoogleToolboxForMac.framework */,
+				A26FDA211E4736DF00FF782F /* MDFTextAccessibility.framework */,
+				A26FDA221E4736DF00FF782F /* Pods_AuxiliumTests.framework */,
+				A26FDA181E47358600FF782F /* EventKit.framework */,
+				A26FDA191E47358600FF782F /* EventKitUI.framework */,
+				A26FDA161E47339300FF782F /* MapKit.framework */,
+				A26FDA111E472B7600FF782F /* CoreLocation.framework */,
 				A26FDA011E46A6D100FF782F /* TesseractOCR.framework */,
 				A26FD9FF1E46A6CC00FF782F /* MaterialComponents.framework */,
 				A21AD8E71E46A33600DA84E3 /* MaterialComponents.framework */,
@@ -152,6 +193,8 @@
 		A21AF4311E46687D007D9BC5 = {
 			isa = PBXGroup;
 			children = (
+				A26FDA131E472C3700FF782F /* Map.h */,
+				A26FDA141E472C3700FF782F /* Map.m */,
 				A26FDA0E1E471A3700FF782F /* Meds.h */,
 				A26FDA0F1E471A3700FF782F /* Meds.m */,
 				A26FDA0B1E470B2700FF782F /* MyInfo.h */,
@@ -304,6 +347,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 65777GTD95;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A21AF4551E46687E007D9BC5 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -512,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26FDA151E472C3700FF782F /* Map.m in Sources */,
 				A26FDA101E471A3700FF782F /* Meds.m in Sources */,
 				A21AD8F81E46A45D00DA84E3 /* Auxilium.xcdatamodeld in Sources */,
 				A21AD8F51E46A45400DA84E3 /* AddMedicine.m in Sources */,
@@ -681,6 +730,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Auxilium",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MaterialComponents",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -701,6 +751,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Auxilium",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MaterialComponents",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -720,6 +771,10 @@
 				INFOPLIST_FILE = AuxiliumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
@@ -736,6 +791,10 @@
 				INFOPLIST_FILE = AuxiliumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
@@ -748,9 +807,17 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Auxilium;
@@ -763,9 +830,17 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Auxilium;

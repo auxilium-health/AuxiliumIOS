@@ -8,6 +8,7 @@
 
 #import "MyInfo.h"
 #import "AppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface MyInfo ()
 
@@ -17,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
@@ -37,7 +38,7 @@
 }
 
 - (IBAction)save:(id)sender {
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
     [defaults setValue:_pharmacy.text forKey:@"pharmacy"];
@@ -59,6 +60,14 @@
 }
 
 - (IBAction)location:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    appDelegate.location = _location.text;
     
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"map"];
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
 }
 @end

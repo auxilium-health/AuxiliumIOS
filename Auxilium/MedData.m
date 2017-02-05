@@ -8,6 +8,8 @@
 
 #import "MedData.h"
 #import "AppDelegate.h"
+#import <EventKit/EventKit.h>
+
 
 @interface MedData ()
 
@@ -84,6 +86,8 @@
 
 
 -(void) pickerChanged {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     // get NSDate from old string format
@@ -93,7 +97,8 @@
     // get string in new date format
     [dateFormatter setDateFormat:@"MM-dd-yyyy"];
     NSString *strMyDate= [dateFormatter stringFromDate:date];
-    
+    appDelegate.refill = date;
+
     _refillField.text = [NSString stringWithFormat:@"%@",strMyDate];
 }
 
@@ -127,6 +132,15 @@
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.timesArray forKey:@"timesArray"];
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.colorArray forKey:@"colorArray"];
     [[NSUserDefaults standardUserDefaults] setValue:appDelegate.refillArray forKey:@"refillArray"];
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Add to Calendar"
+                                                   message: [NSString stringWithFormat:@"%@%@", @"Do you want to add ", @" to your calendar?"]
+                                                  delegate: self
+                                         cancelButtonTitle:@"Cancel"
+                                         otherButtonTitles:@"Yes",nil];
+    
+    [alert setTag:1];
+    [alert show];
 
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
@@ -134,4 +148,55 @@
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];
 }
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    // get NSDate from old string format
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    date = appDelegate.refill;
+    
+    // get string in new date format
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    
+    NSDate *date1 = date;
+    NSDate *date2 = date;
+    
+    if (alertView.tag == 1) { // UIAlertView with tag 1 detected
+        if (buttonIndex == 0) {
+            // Any action can be performed here
+        }
+        else {
+            EKEventStore *eventStore = [[EKEventStore alloc] init];
+            if ([eventStore respondsToSelector:@selector(requestAccessToEntityType:completion:)]) {
+                // iOS 6 and later
+                [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+                    if (granted) {
+                        EKEvent *event = [EKEvent eventWithEventStore:eventStore];
+                        event.title = [NSString stringWithFormat:@"%@%@", @"Refill ", appDelegate.medName];
+                        event.startDate = date1;
+                        event.endDate = date2;
+                        event.calendar = [eventStore defaultCalendarForNewEvents];
+                        NSError *err = nil;
+                        [eventStore saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
+                        
+                    } else {
+                        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Not able to add to calendar"
+                                                                       message: @"Please allow access to the calendar in settings to save event to calendar"
+                                                                      delegate: self
+                                                             cancelButtonTitle:@"Cancel"
+                                                             otherButtonTitles:nil];
+                        [alert setTag:2];
+                        [alert show];
+                    }
+                }];
+            }
+        }
+    }
+    
+}
+
 @end
