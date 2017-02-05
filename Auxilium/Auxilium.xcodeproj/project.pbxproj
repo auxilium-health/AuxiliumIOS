@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		15C2404AEC880BD30B992FE6 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC36824F62DA5103374ED5B1 /* Pods_AuxiliumUITests.framework */; };
 		42341C496A8B8561F0FF65D7 /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B9AB84316D811AA05D3EB4 /* Pods_AuxiliumTests.framework */; };
-		492D210ED7A5D1E370F9B227 /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */; };
 		A201A7871E468DF200C074D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A201A7861E468DF200C074D0 /* GoogleService-Info.plist */; };
-		A21AF43F1E46687E007D9BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF43E1E46687E007D9BC5 /* main.m */; };
-		A21AF4421E46687E007D9BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4411E46687E007D9BC5 /* AppDelegate.m */; };
-		A21AF4451E46687E007D9BC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4441E46687E007D9BC5 /* ViewController.m */; };
+		A21AD8F21E46A3D900DA84E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF43E1E46687E007D9BC5 /* main.m */; };
+		A21AD8F31E46A3D900DA84E3 /* AuxiliumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF45A1E46687E007D9BC5 /* AuxiliumTests.m */; };
+		A21AD8F41E46A3D900DA84E3 /* AuxiliumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4651E46687E007D9BC5 /* AuxiliumUITests.m */; };
+		A21AD8F51E46A45400DA84E3 /* AddMedicine.m in Sources */ = {isa = PBXBuildFile; fileRef = A298AB6B1E46986A0009F45A /* AddMedicine.m */; };
+		A21AD8F61E46A45400DA84E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4411E46687E007D9BC5 /* AppDelegate.m */; };
+		A21AD8F71E46A45400DA84E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4441E46687E007D9BC5 /* ViewController.m */; };
+		A21AD8F81E46A45D00DA84E3 /* Auxilium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4491E46687E007D9BC5 /* Auxilium.xcdatamodeld */; };
 		A21AF4481E46687E007D9BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21AF4461E46687E007D9BC5 /* Main.storyboard */; };
-		A21AF44B1E46687E007D9BC5 /* Auxilium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4491E46687E007D9BC5 /* Auxilium.xcdatamodeld */; };
 		A21AF44D1E46687E007D9BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21AF44C1E46687E007D9BC5 /* Assets.xcassets */; };
 		A21AF4501E46687E007D9BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21AF44E1E46687E007D9BC5 /* LaunchScreen.storyboard */; };
 		A21AF45B1E46687E007D9BC5 /* AuxiliumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF45A1E46687E007D9BC5 /* AuxiliumTests.m */; };
 		A21AF4661E46687E007D9BC5 /* AuxiliumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21AF4651E46687E007D9BC5 /* AuxiliumUITests.m */; };
+		A26FDA001E46A6CC00FF782F /* MaterialComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FD9FF1E46A6CC00FF782F /* MaterialComponents.framework */; };
+		A26FDA021E46A6D100FF782F /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FDA011E46A6D100FF782F /* TesseractOCR.framework */; };
+		A26FDA031E46A6DB00FF782F /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */; };
+		A26FDA0A1E46D7DA00FF782F /* MedData.m in Sources */ = {isa = PBXBuildFile; fileRef = A26FDA091E46D7DA00FF782F /* MedData.m */; };
 		A298AB651E4692D20009F45A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A298AB641E4692D20009F45A /* tessdata */; };
-		A298AB671E46932F0009F45A /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298AB661E46932F0009F45A /* TesseractOCR.framework */; };
 		A298AB691E4693E70009F45A /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A298AB681E4693E60009F45A /* image_sample.jpg */; };
-		A298AB6C1E46986A0009F45A /* AddMedicine.m in Sources */ = {isa = PBXBuildFile; fileRef = A298AB6B1E46986A0009F45A /* AddMedicine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,7 @@
 		69469057EB57FC097CB46855 /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxilium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A201A7861E468DF200C074D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A21AD8E71E46A33600DA84E3 /* MaterialComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialComponents.framework; path = "Pods/../build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework"; sourceTree = "<group>"; };
 		A21AF43A1E46687E007D9BC5 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AF43E1E46687E007D9BC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A21AF4401E46687E007D9BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +73,10 @@
 		A21AF4611E46687E007D9BC5 /* AuxiliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuxiliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21AF4651E46687E007D9BC5 /* AuxiliumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuxiliumUITests.m; sourceTree = "<group>"; };
 		A21AF4671E46687E007D9BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26FD9FF1E46A6CC00FF782F /* MaterialComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialComponents.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/MaterialComponents/MaterialComponents.framework"; sourceTree = "<group>"; };
+		A26FDA011E46A6D100FF782F /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Auxilium-dopiievwephpcrgayazvpanyyuoq/Build/Products/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework"; sourceTree = "<group>"; };
+		A26FDA081E46D7DA00FF782F /* MedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedData.h; sourceTree = "<group>"; };
+		A26FDA091E46D7DA00FF782F /* MedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedData.m; sourceTree = "<group>"; };
 		A298AB641E4692D20009F45A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		A298AB661E46932F0009F45A /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		A298AB681E4693E60009F45A /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
@@ -83,8 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A298AB671E46932F0009F45A /* TesseractOCR.framework in Frameworks */,
-				492D210ED7A5D1E370F9B227 /* Pods_Auxilium.framework in Frameworks */,
+				A26FDA031E46A6DB00FF782F /* Pods_Auxilium.framework in Frameworks */,
+				A26FDA021E46A6D100FF782F /* TesseractOCR.framework in Frameworks */,
+				A26FDA001E46A6CC00FF782F /* MaterialComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +133,9 @@
 		5B0F7CD326B0F3820D4374EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A26FDA011E46A6D100FF782F /* TesseractOCR.framework */,
+				A26FD9FF1E46A6CC00FF782F /* MaterialComponents.framework */,
+				A21AD8E71E46A33600DA84E3 /* MaterialComponents.framework */,
 				7C76CE4D453A56DB1E06C918 /* Pods_Auxilium.framework */,
 				16B9AB84316D811AA05D3EB4 /* Pods_AuxiliumTests.framework */,
 				BC36824F62DA5103374ED5B1 /* Pods_AuxiliumUITests.framework */,
@@ -133,6 +146,8 @@
 		A21AF4311E46687D007D9BC5 = {
 			isa = PBXGroup;
 			children = (
+				A26FDA081E46D7DA00FF782F /* MedData.h */,
+				A26FDA091E46D7DA00FF782F /* MedData.m */,
 				A298AB6A1E46986A0009F45A /* AddMedicine.h */,
 				A298AB6B1E46986A0009F45A /* AddMedicine.m */,
 				A21AF43C1E46687E007D9BC5 /* Auxilium */,
@@ -487,11 +502,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A298AB6C1E46986A0009F45A /* AddMedicine.m in Sources */,
-				A21AF4451E46687E007D9BC5 /* ViewController.m in Sources */,
-				A21AF4421E46687E007D9BC5 /* AppDelegate.m in Sources */,
-				A21AF43F1E46687E007D9BC5 /* main.m in Sources */,
-				A21AF44B1E46687E007D9BC5 /* Auxilium.xcdatamodeld in Sources */,
+				A21AD8F81E46A45D00DA84E3 /* Auxilium.xcdatamodeld in Sources */,
+				A21AD8F51E46A45400DA84E3 /* AddMedicine.m in Sources */,
+				A21AD8F61E46A45400DA84E3 /* AppDelegate.m in Sources */,
+				A21AD8F71E46A45400DA84E3 /* ViewController.m in Sources */,
+				A26FDA0A1E46D7DA00FF782F /* MedData.m in Sources */,
+				A21AD8F21E46A3D900DA84E3 /* main.m in Sources */,
+				A21AD8F31E46A3D900DA84E3 /* AuxiliumTests.m in Sources */,
+				A21AD8F41E46A3D900DA84E3 /* AuxiliumUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +591,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -588,6 +607,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -618,7 +638,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -630,6 +650,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -645,10 +666,13 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Auxilium",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MaterialComponents",
 				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.Auxilium";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -664,9 +688,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Auxilium",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MaterialComponents",
 				);
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.Auxilium";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -678,8 +704,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AuxiliumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
@@ -692,8 +720,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = AuxiliumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
@@ -705,8 +735,10 @@
 			baseConfigurationReference = 2E1B2E0BE26ABA0A0792D89B /* Pods-AuxiliumUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Auxilium;
@@ -718,8 +750,10 @@
 			baseConfigurationReference = 5F19A877A4E6EC440B4CCD45 /* Pods-AuxiliumUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 65777GTD95;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AuxiliumUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Auxilium;

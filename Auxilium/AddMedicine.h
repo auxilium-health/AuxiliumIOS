@@ -10,7 +10,11 @@
 #import <TesseractOCR/TesseractOCR.h>
 
 
-@interface AddMedicine : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate>
+@interface AddMedicine : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate> {
+    UIImagePickerController *imagePicker;
+    UIImage *image;
+    Boolean photo;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)takePhoto:  (UIButton *)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;

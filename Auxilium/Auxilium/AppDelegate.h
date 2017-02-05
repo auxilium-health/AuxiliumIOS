@@ -15,6 +15,16 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property (nonatomic, retain) NSString *medName;
+@property (nonatomic, retain) NSString *weekTime;
+@property (nonatomic, retain) NSString *color;
+@property (nonatomic, retain) NSDate *refill;
+
+@property (nonatomic, retain) NSMutableArray *nameArray;
+@property (nonatomic, retain) NSMutableArray *timesArray;
+@property (nonatomic, retain) NSMutableArray *colorArray;
+@property (nonatomic, retain) NSMutableArray *refillArray;
+
 - (void)saveContext;
 
 
