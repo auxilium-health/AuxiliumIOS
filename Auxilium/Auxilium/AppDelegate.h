@@ -30,6 +30,9 @@
 @property (nonatomic, retain) NSString *docName;
 @property (nonatomic, retain) NSString *docPhone;
 
+@property (nonatomic) Boolean *screen;
+
+
 - (void)saveContext;
 
 

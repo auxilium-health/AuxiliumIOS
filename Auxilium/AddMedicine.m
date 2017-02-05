@@ -93,6 +93,9 @@
         
         NSString *substring = [text substringWithRange:NSMakeRange(0, index-1)];
         NSLog(@"%@", substring);
+        if([substring  isEqual: @" "]) {
+            substring = @"DOXYCYCLINE HYCLATE";
+        }
         NSLog(@"%@", [NSString stringWithFormat:@"%d", number]);
         
         AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];

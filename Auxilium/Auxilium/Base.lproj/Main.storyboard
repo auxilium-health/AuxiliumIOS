@@ -48,12 +48,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrO-6b-Bd1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrO-6b-Bd1">
                                 <rect key="frame" x="0.0" y="45" width="375" height="523"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xir-9V-JUJ" firstAttribute="top" secondItem="UrO-6b-Bd1" secondAttribute="bottom" constant="99" id="N21-nL-CKd"/>
+                            <constraint firstAttribute="trailing" secondItem="UrO-6b-Bd1" secondAttribute="trailing" id="Q10-Z0-ibo"/>
+                            <constraint firstItem="UrO-6b-Bd1" firstAttribute="leading" secondItem="2QW-L3-HW0" secondAttribute="leading" id="oqj-tW-xLI"/>
+                            <constraint firstItem="UrO-6b-Bd1" firstAttribute="top" secondItem="Dgd-Er-yyZ" secondAttribute="bottom" constant="25" id="wII-mF-5GB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="UrO-6b-Bd1" id="4Qc-Rx-aWN"/>
@@ -136,10 +141,15 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Add Medication" id="foB-eF-l71">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="unG-2Z-odW">
-                                            <connections>
-                                                <action selector="cancel:" destination="99C-Zc-HQa" id="zjP-Bl-ffB"/>
-                                            </connections>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="aFk-6d-sBf">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ue4-5h-X51">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancel:" destination="99C-Zc-HQa" eventType="touchUpInside" id="KrF-Wk-q3j"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Done" id="STt-ly-omP">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d4s-uz-cba">
@@ -161,6 +171,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="cancel" destination="aFk-6d-sBf" id="Nm5-oC-Mz6"/>
                         <outlet property="colorField" destination="WGc-AX-iEN" id="MhW-hf-5z2"/>
                         <outlet property="medName" destination="Brq-Vm-BzB" id="5qf-QI-V2u"/>
                         <outlet property="refillField" destination="GbJ-DS-Uku" id="j49-kb-NVT"/>
@@ -309,7 +320,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="39P-Oj-SNX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="39P-Oj-SNX">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>

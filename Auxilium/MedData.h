@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *colorField;
 @property (weak, nonatomic) IBOutlet UITextField *timesDay;
 @property (weak, nonatomic) IBOutlet UITextField *medName;
+@property (weak, nonatomic) IBOutlet UIButton *cancel;
 
 - (IBAction)done:(id)sender;
 @end

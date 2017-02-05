@@ -21,8 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    if(appDelegate.screen == false) {
+        _cancel.enabled = NO;
+    }
+    
     _medName.text = appDelegate.medName;
     _timesDay.text = appDelegate.weekTime;
     _colorField.text = appDelegate.color;
@@ -141,12 +144,13 @@
     
     [alert setTag:1];
     [alert show];
-
+    
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
     
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];
+    
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

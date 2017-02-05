@@ -21,8 +21,6 @@
     tableData = [[NSMutableArray alloc] init];
     tableData = [[defaults objectForKey:@"nameArray"] mutableCopy];
     
-//    tableData = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
-    
     _tableView.dataSource = self;
     _tableView.delegate = self;
 
@@ -99,6 +97,18 @@
     appDelegate.color = [color objectAtIndex:index];
     appDelegate.refill = [refill objectAtIndex:index];
     
+    appDelegate.screen = false;
+    
+    [tableData removeObjectAtIndex:indexPath.row];
+    [time removeObjectAtIndex:indexPath.row];
+    [refill removeObjectAtIndex:indexPath.row];
+    [color removeObjectAtIndex:indexPath.row];
+    
+    [defaults setValue:tableData forKey:@"nameArray"];
+    [defaults setValue:tableData forKey:@"timesArray"];
+    [defaults setValue:tableData forKey:@"refillArray"];
+    [defaults setValue:tableData forKey:@"colorArray"];
+    
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"medData"];
     
@@ -113,6 +123,11 @@
 }
 
 - (IBAction)back:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
 }
 @end
